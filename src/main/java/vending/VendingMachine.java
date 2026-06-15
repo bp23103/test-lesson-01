@@ -32,9 +32,9 @@ public class VendingMachine {
     }
 
     /** 直前の購入で出たおつり */
-    public int getChange() {
-        return change;
-    }
+public int change() {
+    return change;
+}
 
     /** その商品を今すぐ買えるか（在庫があり、かつ投入金額が足りる） */
     public boolean canBuy(String name) {

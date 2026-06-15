@@ -1,0 +1,46 @@
+-------------------------------------------------------------------------------
+Test set: vending.VendingMachineTest
+-------------------------------------------------------------------------------
+Tests run: 4, Failures: 2, Errors: 2, Skipped: 0, Time elapsed: 0.029 s <<< FAILURE! -- in vending.VendingMachineTest
+vending.VendingMachineTest.境界の上なら買える -- Time elapsed: 0.011 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <false> but was: <true>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at vending.VendingMachineTest.境界の上なら買える(VendingMachineTest.java:50)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+vending.VendingMachineTest.ちょうどの金額で買える -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: 水 は今は買えません
+	at vending.VendingMachine.buy(VendingMachine.java:50)
+	at vending.VendingMachineTest.ちょうどの金額で買える(VendingMachineTest.java:20)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+vending.VendingMachineTest.境界の下では買えない -- Time elapsed: 0.004 s <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at org.junit.jupiter.api.AssertionFailureBuilder.build(AssertionFailureBuilder.java:151)
+	at org.junit.jupiter.api.AssertionFailureBuilder.buildAndThrow(AssertionFailureBuilder.java:132)
+	at org.junit.jupiter.api.AssertEquals.failNotEqual(AssertEquals.java:197)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:182)
+	at org.junit.jupiter.api.AssertEquals.assertEquals(AssertEquals.java:177)
+	at org.junit.jupiter.api.Assertions.assertEquals(Assertions.java:1145)
+	at vending.VendingMachineTest.境界の下では買えない(VendingMachineTest.java:42)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+
+vending.VendingMachineTest.お釣りが正しく出る -- Time elapsed: 0.002 s <<< ERROR!
+java.lang.IllegalStateException: 水 は今は買えません
+	at vending.VendingMachine.buy(VendingMachine.java:50)
+	at vending.VendingMachineTest.お釣りが正しく出る(VendingMachineTest.java:30)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+

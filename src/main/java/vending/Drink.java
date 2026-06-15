@@ -8,7 +8,7 @@ public class Drink {
         this.name = name;
     }
 
-    public String getName() {
-        return name;
-    }
+public String name() {
+    return name;
+}
 }
